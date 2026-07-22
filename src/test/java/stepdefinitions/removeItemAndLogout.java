@@ -29,6 +29,7 @@ public class removeItemAndLogout{
     @Then("verify user logs out successfully")
     public void verify_user_logs_out_successfully() {
         String loginText = removeItemAndLogoutPage.verifyLoginHeading();
+        System.out.println("Login heading : " + loginText);
         Assert.assertEquals(loginText, "Log in");
     }
 }

@@ -32,6 +32,7 @@ public class loginStepDefintion{
     @Then("verify Home title in dashboard page")
     public void verify_home_title_in_dashboard_page() {
         String homeHeading = loginPage.verifyHomePageHeading();
+        System.out.println("Home heading : " + homeHeading);
         Assert.assertTrue(homeHeading.contains("Home"));
     }
 }

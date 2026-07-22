@@ -43,6 +43,7 @@ public class addProductAndCompletePaymentStepDefinition {
  @Then("user verify order details")
  public void user_verify_order_details() {
  String productName = addToCartAndCompletePaymentPage.verifyOrderDetails();
+  System.out.println("Product Name : " + productName);
  Assert.assertEquals(productName, "ADIDAS ORIGINAL");
  }
  }

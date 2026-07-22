@@ -1,4 +1,4 @@
-package testRunner;
+package runner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
                 features =  {"D:\\Neeraj\\Playwright\\Playwright_Cucumber_Activity\\src\\resources"},
                 glue = "stepdefinitions",
                 dryRun = false,
-                plugin = {"pretty", "html:Cucumber_Reports/reports.html", "json:Cucumber_Reports/report.json"}
+                plugin = {"pretty", "html:target/cucumber-reports/cucumber.html", "json:target/cucumber-reports/report.json"}
         )
 
 
-public class testRunnerClass extends AbstractTestNGCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
 }
