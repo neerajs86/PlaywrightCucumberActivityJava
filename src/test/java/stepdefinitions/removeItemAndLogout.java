@@ -25,6 +25,7 @@ public class removeItemAndLogout{
     @Then("user clicks signout button to logout.")
     public void user_clicks_signout_button_to_logout() {
         removeItemAndLogoutPage.clickSignOutButton();
+        System.out.println("User logout from the application");
     }
 
     @Then("verify user logs out successfully")
