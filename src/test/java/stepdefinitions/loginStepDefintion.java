@@ -14,6 +14,7 @@ public class loginStepDefintion{
     @Given("user open browser and launch application")
     public void user_open_browser_and_launch_application() {
         loginPage.launchApplication("https://rahulshettyacademy.com/client/#/auth/login");
+        System.out.println("Application is launched successfully here");
     }
 
     @When("user enter email as {string} and password as {string}")

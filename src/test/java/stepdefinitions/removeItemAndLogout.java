@@ -19,11 +19,13 @@ public class removeItemAndLogout{
     @When("user clicks Delete button")
     public void user_clicks_delete_button() {
         removeItemAndLogoutPage.clickDeleteButton();
+        System.out.println("Product deleted from the cart");
     }
 
     @Then("user clicks signout button to logout.")
     public void user_clicks_signout_button_to_logout() {
         removeItemAndLogoutPage.clickSignOutButton();
+        System.out.println("User logout from the application");
     }
 
     @Then("verify user logs out successfully")
