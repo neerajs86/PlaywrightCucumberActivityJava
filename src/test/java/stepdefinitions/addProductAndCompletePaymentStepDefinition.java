@@ -13,7 +13,6 @@ public class addProductAndCompletePaymentStepDefinition {
  @Given("user clicks add to cart button")
  public void user_clicks_add_to_cart_button() {
   addToCartAndCompletePaymentPage.clickAddToCartButton();
-  System.out.println("Product added to the cart");
  }
 
  @Given("user navigate to cart page")
